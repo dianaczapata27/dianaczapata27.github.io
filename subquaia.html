@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" type="image/png" href="img/logos/logo.png">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subquaia and analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand horizontal-brand" href="about_me.html">
+                    <img src="img/logos/logo.png" alt="Logo" width="40" class="d-inline-block align-text-top">
+                    Diana C. Zapata-Zuluaga
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="section-buttons d-flex justify-content-center flex-wrap gap-3 mt-4">
+
+                <a href="Thesis_Subquaia.html" class="btn-section">Abstract</a>
+
+                <a href="disperse.html" class="btn-section">Large-scale structure with DisPerSE</a>
+
+                <a href="Overdensity-based.html" class="btn-section">Overdensity analysis</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="my-5">
+            <section class="intro-new row align-items-top mt-12">
+                <h2 class = 'centrar'>Sigma Clipping</h2>
+                <div class="col-12 imagen-presentacion text-center">
+                                    <img src="img/graphics/sigma_clipping.png"
+                                        alt="Sigma clipping illustration"
+                                        class="img-sigma-clipping">
+                </div>
+        
+                
+        </main>
+    </div>
+
+
+
+
+    <div class="text-center mt-5">
+        <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVLS">
+                VLS Samples
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLF">
+                Luminosity Function
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCorrelation">
+                Correlation Function
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMass">
+                Halo Mass Assignment
+            </button>
+
+        </div>
+    </div>
+   
+
+
+    
+    
+
+    <footer class="py-3 text-center">
+        <p class="mb-0">&copy; 2025 - Diana C. Zapata Zuluaga - FACom</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <div class="modal modal-xl fade" id="modalVLS" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">VLS Samples</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/graphics/vls.png" class="img-fluid" alt="VLS">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-xl fade" id="modalLF" tabindex="-1" aria-labelledby="modalLFLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLFLabel">
+                        Luminosity Function
+                        <select id="lfSelector" class="estrellas">
+                            <option value="subquaia">SubQuaia</option>
+                            <option value="vls21">VLS Mᵢ ≤ -21</option>
+                            <option value="vls23">VLS Mᵢ ≤ -23</option>
+                        </select>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img id="lfImage"
+                            src="img/graphics/luminosity_function_croton_20_5.png"
+                            class="img-fluid"
+                            alt="Luminosity Function">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal modal-xl fade" id="modalCorrelation" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">TExto estoe s un texto y puedo poenr l oque sea </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/graphics/correlation_function.png" class="img-fluid" alt="Correlation">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal-xl fade" id="modalMass" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Halo Mass Assignment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="img/graphics/mass_assignment.png" class="img-fluid" alt="Mass Assignment">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById("lfSelector").addEventListener("change", function () {
+        const img = document.getElementById("lfImage");
+
+        const images = {
+            subquaia: "img/graphics/luminosity_function_croton_20_5.png",
+            vls21: "img/graphics/vls_21.png",
+            vls23: "img/graphics/vls_23.png"
+        };
+
+        img.src = images[this.value];
+    });
+    </script>
+
+
+</body>
+
+</html>

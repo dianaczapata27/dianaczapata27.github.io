@@ -1,0 +1,857 @@
+html,body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+header {
+    background-color: #d9d9d9;
+    color: white;
+    padding: 50px 0;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.intro {
+    margin-top: 100px;  /* Espacio arriba */
+    margin-bottom: 100px; /* Espacio abajo */
+    margin-left: 200px; /* Espacio a la izquierda */
+    margin-right: 200px; /* Espacio a la derecha */
+    font-size: 18px;
+
+}
+
+.intro-new{
+    font-size: 18px;
+    
+}
+
+.content {
+    display: flex; /* Alinea la imagen y el texto en la misma fila */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+.text {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+    text-align: justify;
+}
+
+.image {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+}
+
+.scroll-container {
+    width: 100%; /* Se adapta al ancho del contenedor */
+    overflow-x: auto; /* Agrega el scroll horizontal */
+    white-space: nowrap; /* Evita que la imagen se ajuste automáticamente */
+}
+
+.image-Organigrama {
+    width: 800px; /* Ajusta el tamaño de la imagen */
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.graphs {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.graph-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.graph-container img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Hace que el contenido principal empuje el footer hacia abajo */
+}
+footer {
+    background-color: #d9d9d9;
+    color: #333;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #d9d9d9;  /* Color de fondo */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Alinear los elementos en una línea */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;  /* Cambio de color al pasar el cursor */
+}
+
+/* Contenedor del logo y nombre */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Logo */
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* Nombre con enlace */
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nombre:hover {
+    color: #5a2d82;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botones del menú */
+.boton, .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 40px;
+    border: 2px solid #444;
+    min-width: 100px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton.activo, .nav-link.active {
+    background-color: #5a2d82 !important;
+    color: white !important;
+    border-color: #5a2d82 !important;
+}
+
+
+
+.boton:hover {
+    background-color: #5a2d82;
+    color: white;
+    border-color: #5a2d82;
+}
+
+/* Botón activo */
+.activo {
+    background-color: #5a2d82;
+    color: white;
+    border-color: #5a2d82;
+}
+
+.activo_me {
+    color: #5a2d82;
+    font-weight: bold;
+
+}
+
+
+.home-icon {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.home-icon img {
+    width: 30px; /* Ajusta el tamaño del icono */
+    height: auto;
+    vertical-align: middle; /* Asegura alineación con el texto */
+}
+
+.separator {
+    border: none;
+    height: 2px;  /* Grosor de la línea */
+    background-color: #ccc; /* Color de la línea */
+    margin: 0px auto; /* Espaciado arriba y abajo */
+    width: 80%; /* Ajusta el ancho de la línea */
+}
+
+.generalidades {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra en la página */
+    gap: 20px; /* Espacio entre el gráfico y el cuadro de información */
+    padding: 20px;
+}
+
+.grafico img {
+    width: 400px; /* Ajusta el tamaño del gráfico */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+
+.info {
+    max-width: 500px; /* Limita el ancho del cuadro de información */
+    background-color: #ffffff; /* Fondo suave */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.menu {
+    margin-bottom: 10px;
+}
+
+select {
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+select:hover {
+    border-color: #5a2d82; /* Color del menú principal */
+}
+
+select:focus {
+    border-color: #5a2d82;
+    box-shadow: 1px 1px 8px #5a2d8280;
+}
+
+/* Contenedor principal */
+.container {
+    align-items: center; /* Alinea los elementos en la parte superior */
+    justify-content: center;
+    gap: 20px;
+    padding: 8px 40px;
+}
+
+.justificar {
+    text-align: justify;
+}
+.centrar {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.centrar-texto {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; /* Opcional, para centrar también horizontalmente */
+}
+
+/* Contenedor centrado */
+.tools-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    gap: 40px; /* Mayor separación entre elementos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+
+.tools-container a {
+    display: flex;
+    flex-direction: column;    /* ← apila logo y texto verticalmente */
+    align-items: center;       /* ← centra el texto bajo el logo */
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(55, 9, 65);     /* o el color que quieras */
+    font-weight: bold;
+    gap: 4px;                  /* espacio entre logo y texto */
+}
+
+/* Estilo de las imágenes */
+.tools-container img {
+    width: 35px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Contenedor centrado */
+.tools-container-grupos {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    gap: 40px; /* Mayor separación entre elementos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo de las imágenes */
+.tools-container-grupos img {
+    max-width: 350px;
+    max-height: 150px;
+    object-fit: contain;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Contenedor centrado */
+.tools-container-grupohermes {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    gap: 40px; /* Mayor separación entre elementos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo de las imágenes */
+.tools-container-grupohermes img {
+    width: 150px;
+    max-width: 150px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Contenedor centrado */
+.tools-container-redes {
+    display: flex;
+    justify-content: right; /* Centrar horizontalmente */
+    align-items: center;
+    gap: 20px; /* Mayor separación entre elementos */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilo de las imágenes */
+.tools-container-redes img {
+    width: 45px;
+    max-width: 50px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Panel izquierdo */
+.left-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre el gráfico y el cuadro de información */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-brand {
+    display: flex;
+    flex-direction: row; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra el logo y el texto horizontalmente */
+    justify-content: center; /* Ajusta la alineación verticalmente */
+    gap: 10px; /* Espaciado entre el logo y el texto */
+    text-align: center; /* Asegura que el texto se centre */
+}
+
+
+.image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Panel derecho */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px; /* Para mantener un tamaño uniforme */
+}
+
+/* Contenedor del selector */
+.selection-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Select estilizado */
+#estrellas {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Cuadro de información */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    min-width: 280px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-box th, .table-box td {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+.image-box img, .selection-box img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.image2 {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+}
+
+.image3 {
+    width: 800px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.resaltado {
+    background-color: yellow !important; /* Cambia el color de fondo */
+    font-weight: bold; /* Opcional: hace que el texto se vea más fuerte */
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si tiene altura */
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+/* Contenido de la ventana emergente */
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1500px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+/* Botón de cierre */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Mostrar Datos */
+.btn {
+    background: white; /* Fondo blanco como los botones superiores */
+    color: black; /* Texto negro */
+    border: 2px solid black; /* Borde negro */
+    padding: 8px 20px;
+    border-radius: 20px; /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover como los botones de arriba */
+.btn:hover {
+    background: #5a2d82; /* Color morado oscuro al pasar el mouse */
+    color: white;
+}
+
+/* Contenedor de los paneles (Gráfico y Tabla) */
+.contenedor-paneles {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre el gráfico y la tabla */
+    flex-wrap: wrap; /* Permite que se adapten en pantallas pequeñas */
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* Estilos para cada panel */
+.panel {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px; /* Evita que se hagan demasiado pequeños */
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* Ajustar tamaño de la imagen del gráfico */
+.panel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+
+/* Mejorar el diseño de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+/* Ajustar celdas para que sean más compactas */
+.table th, .table td {
+    padding: 5px; /* Reduce el espacio dentro de cada celda */
+    white-space: nowrap; /* Evita que las celdas ocupen varias líneas */
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Ajustar el contenedor de la tabla */
+.tabla {
+    max-width: 100%; /* Evita que la tabla sea demasiado ancha */
+    overflow-x: auto; /* Agrega un scroll horizontal si es necesario */
+    
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+th {
+    background-color: #5a2d82 !important; /* Color morado */
+    color: white !important;
+}
+
+/* Panel derecho */
+.resultados resu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px; /* Para mantener un tamaño uniforme */
+}
+
+
+
+.contenedor-parametros {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr; /* Dos columnas para imágenes, una para la descripción */
+    grid-template-rows: auto auto; /* Dos filas: una para imágenes/descripción y otra para el gráfico */
+    gap: 10px; /* Espacio entre paneles */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar en la página */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    justify-content: center;
+    padding: 20px;
+}
+
+.box2 {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    min-width: 350px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Paneles generales */
+.panel-corr {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Paneles de imagen */
+.panel-mass {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Panel de descripción */
+.panel-result {
+    grid-column: 3; /* Ocupa la tercera columna */
+    grid-row: 1; /* Se mantiene en la primera fila */
+}
+
+/* Panel del gráfico */
+.panel-orbitas {
+    grid-column: 1 / span 2; /* Ocupa las dos primeras columnas */
+    grid-row: 2; /* Se posiciona en la segunda fila */
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra todo horizontalmente */
+    text-align: left; /* Alinear texto a la izquierda */
+    padding: 50px 15%; /* Espaciado en los lados */
+    background-color: #f4f4f4;
+    min-height: 60vh; /* Ocupar más espacio vertical */
+}
+
+.texto-presentacion {
+    flex: 1.5; /* Ocupar la mitad del espacio disponible */
+    max-width: 80%;
+}
+
+.texto-presentacion h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto-presentacion p {
+    font-size: 20px;
+    color: #444;
+}
+
+.imagen-presentacion {
+    /* display: flex; */
+    /* justify-content: right; */
+}
+
+.imagen-presentacion img {
+    width: 300px; /* Ajustar el tamaño */
+    border-radius: 20%;
+}
+
+.modal-backdrop{
+    z-index: 999 !important;
+}
+
+.mjx-chtml.MathJax_CHTML{
+    font-size: 100% !important;
+}
+
+.fixed-top{
+    z-index: 999;
+}
+
+.btn-primary:active, 
+.btn-primary:focus {
+    --bs-btn-active-bg: #5a2d82 !important;
+    --bs-btn-hover-border-color: #5a2d82 !important;
+    --bs-btn-active-border-color: #5a2d82 !important;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #5a2d82 !important;
+    --bs-btn-border-color: #5a2d82 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #512776 !important;
+    --bs-btn-hover-border-color: #512776 !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #512776 !important;
+    --bs-btn-active-border-color: #441f64 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #5a2d82 !important;
+    --bs-btn-disabled-border-color: #5a2d82 !important;
+}
+
+.card-parameters{
+    min-width: 337px;
+}
+
+
+@media (max-width: 768px) {
+    .conainer-parameter{
+        padding: 10px;
+    }
+    .mjx-chtml.MathJax_CHTML{
+        font-size: 85%;
+    }
+}
+
+
+.tools-container img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+/* SOLO DisPerSE más grande y sin aplastarse */
+.tools-container img.logo-disperse {
+    height: 30px;   /* prueba 40–50 hasta que te guste */
+    width: auto;    /* respeta proporción horizontal */
+}
+
+/* Baja el texto de DisPerSE manualmente */
+.logo-disperse {
+    margin-top: 20px;   /* ajústalo a 12, 15 o 18 hasta que te guste */
+}
+
+.tools-container img.logo-quaia {
+    height: 50px;   /* prueba 40–50 hasta que te guste */
+    width: auto;    /* respeta proporción horizontal */
+}
+
+.tools-container img.logo-subquaia {
+    height: 50px;   /* prueba 40–50 hasta que te guste */
+    width: auto;    /* respeta proporción horizontal */
+}
+
+.tools-container img.logo-python {
+    height: 50px;   /* prueba 40–50 hasta que te guste */
+    width: auto;    /* respeta proporción horizontal */
+}
+
+.tools-container img.logo-pdf {
+    height: 50px;   /* prueba 40–50 hasta que te guste */
+    width: auto;    /* respeta proporción horizontal */
+}
+
+
+/* Botones de navegación interna al final de la página */
+.section-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-section {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #5a2d82;       /* Morado */
+    border: 2px solid #5a2d82;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-section:hover {
+    background-color: white;
+    color: #5a2d82;
+    border-color: #5a2d82;
+}
+
+.imagen-presentacion img.img-sigma-clipping {
+    border-radius: 0 !important;
+    width: 100% !important;      /* Ocupa todo el ancho del contenedor */
+    max-width: 1200;            /* Ajusta el tamaño máximo (prueba 800–1200) */
+    height: auto !important;     /* Mantiene proporción */
+    display: block;
+    margin: 0 auto;
+}
+
