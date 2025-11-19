@@ -977,6 +977,39 @@ th {
     }
 }
 
+/* ========= Estilo del dropdown "Thesis - Quaia" ========= */
+
+/* Caja del menú desplegable */
+.navbar .dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0.4rem 0;
+    min-width: 230px;   /* puedes subir/bajar este valor */
+}
+
+/* Estilo base de cada opción */
+.navbar .dropdown-menu .dropdown-item {
+    font-weight: 600;                 /* negrilla */
+    color: #333333;                   /* texto normal */
+    padding: 0.4rem 1.1rem;           /* alto y ancho del botón */
+}
+
+/* Hover sobre una opción */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #5a2d82;        /* morado */
+    color: #ffffff;                   /* texto blanco */
+}
+
+/* También cuando está "activa" (clic) */
+.navbar .dropdown-menu .dropdown-item:active,
+.navbar .dropdown-menu .dropdown-item.active {
+    background-color: #512776;        /* morado un poquito más oscuro */
+    color: #ffffff;
+}
+
+
 
 
 

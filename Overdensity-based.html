@@ -21,7 +21,6 @@
                     Diana C. Zapata-Zuluaga
                 </a>
 
-                <!-- Botón hamburguesa -->
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
@@ -31,14 +30,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- 🔹 TODO lo que quieras que se oculte en móvil va AQUÍ -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="section-buttons d-flex justify-content-center flex-wrap gap-3 ms-lg-auto mt-3 mt-lg-0">
-                        <a href="Thesis_Subquaia.html" class="btn-section">Abstract</a>
-                        <a href="subquaia.html" class="btn-section">SubQuaia & VLS</a>
-                        <a href="disperse.html" class="btn-section">Large-scale structure with DisPerSE</a>
-                        <a href="Overdensity-based.html" class="btn-section">Overdensity analysis</a>
-                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <!-- 🔹 Item con dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active"
+                            href="Thesis_Subquaia.html"
+                            id="thesisDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                                Thesis - Quaia
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="thesisDropdown">
+                                <li><a class="dropdown-item" href="Thesis_Subquaia.html">Abstract</a></li>
+                                <li><a class="dropdown-item" href="subquaia.html">SubQuaia &amp; VLS</a></li>
+                                <li><a class="dropdown-item" href="disperse.html">Large-scale structure with DisPerSE</a></li>
+                                <li><a class="dropdown-item" href="Overdensity-based.html">Overdensity analysis</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
