@@ -855,3 +855,84 @@ th {
     margin: 0 auto;
 }
 
+/* Ajustes solo para la sección de barrido angular */
+/* Ajustes solo para la sección de barrido angular */
+.barrido-angular .contenedor-paneles {
+    display: flex;           /* asegúrate de que siga siendo flex */
+    max-width: 1400px;       /* más razonable que 2100px */
+    margin: 10px auto;
+    gap: 10;                  /* sin espacio entre paneles */
+    justify-content: center; 
+}
+
+.barrido-angular .panel {
+    background: #ffffff;                 /* fondo blanco para que se vea la sombra */
+    padding: 5px;                        /* un poquito de aire */
+    margin: 0 5px;
+
+    border-radius: 8px;                  /* esquinas suavemente redondeadas */
+    border: 1px solid rgba(0, 0, 0, 0.08);  /* borde muy sutil */
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);  /* sombra ligera */
+}
+
+.barrido-angular .panel img {
+    max-width: 100%;         /* ocupa todo el panel */
+    height: auto;
+    margin: 0 auto;
+}
+
+.barrido-angular .selection-container {
+    display: flex;
+    justify-content: center;   /* centra horizontalmente label + select */
+    align-items: center;       /* los alinea verticalmente */
+    gap: 8px;                  /* espacio entre el texto y el select */
+    margin: 10px auto 15px;    /* centrado respecto al bloque, como las gráficas */
+    /* opcional: mismo ancho máx. que las gráficas */
+    max-width: 1100px;         /* ajusta si cambiaste el de .contenedor-paneles */
+}
+
+
+/* ===== Estilos SOLO para la sección de Correlation function ===== */
+
+.barrido-correlation .selection-container {
+    display: flex;
+    justify-content: center;    /* centra texto + select */
+    align-items: center;
+    gap: 8px;
+    margin: 15px auto 20px;
+    max-width: 900px;           /* más estrecho que todo el ancho de la página */
+}
+
+.barrido-correlation .contenedor-paneles {
+    display: flex;
+    justify-content: center;    /* centra la ventanita */
+    margin: 0 auto 30px;
+    max-width: 900px;           /* controla qué tan ancho es el bloque */
+}
+
+.barrido-correlation .panel {
+    background: #ffffff;                 /* fondo blanco */
+    padding: 10px 15px;                  /* un poco de aire interno */
+    border-radius: 10px;                 /* bordes suaves */
+    border: 1px solid rgba(0, 0, 0, 0.10); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);  /* sombra ligeramente más marcada */
+    text-align: center;
+}
+
+.barrido-correlation .panel h4 {
+    margin-bottom: 10px;
+}
+
+.barrido-correlation .panel img {
+    max-width: 100%;     /* que se adapte al panel */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
