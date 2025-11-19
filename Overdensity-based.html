@@ -20,20 +20,26 @@
                     <img src="img/logos/logo.png" alt="Logo" width="40" class="d-inline-block align-text-top">
                     Diana C. Zapata-Zuluaga
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="section-buttons d-flex justify-content-center flex-wrap gap-3 mt-4">
 
-                <a href="Thesis_Subquaia.html" class="btn-section">Abstract</a>
-
-                <a href="subquaia.html" class="btn-section">SubQuaia & VLS</a>
-
-                <a href="disperse.html" class="btn-section">Large-scale structure with DisPerSE</a>
-
-                <a href="Overdensity-based.html" class="btn-section">Overdensity analysis</a>
-
-            </div>
+                <!-- 🔹 TODO lo que quieras que se oculte en móvil va AQUÍ -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="section-buttons d-flex justify-content-center flex-wrap gap-3 ms-lg-auto mt-3 mt-lg-0">
+                        <a href="Thesis_Subquaia.html" class="btn-section">Abstract</a>
+                        <a href="subquaia.html" class="btn-section">SubQuaia & VLS</a>
+                        <a href="disperse.html" class="btn-section">Large-scale structure with DisPerSE</a>
+                        <a href="Overdensity-based.html" class="btn-section">Overdensity analysis</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
