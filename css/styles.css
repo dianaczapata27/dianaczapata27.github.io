@@ -1010,6 +1010,185 @@ th {
 }
 
 
+.link-quaia {
+    color: #5a2d82 !important;   /* morado */
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Si además quieres un “resaltado” de fondo: */
+.link-quaia-highlight {
+    background-color: rgba(90, 45, 130, 0.12);
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+/* Enlace "Quaia" dentro del texto: morado, negrita, subrayado */
+.link-quaia {
+    color: #5a2d82 !important;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-quaia:hover {
+    color: #3b1b56;
+}
+
+/* Título del modal de Quaia */
+#quaiaModalLabel {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #5a2d82;
+}
+
+/* Subtítulo con el link al paper (debajo del título del modal) */
+.modal-subtitle-link {
+    display: block;
+    font-size: 0.9rem;
+    color: #555555;
+    text-decoration: none;
+    margin-top: 2px;
+}
+
+.modal-subtitle-link:hover {
+    color: #5a2d82;
+    text-decoration: underline;
+}
+
+
+/* Centrar título y subtítulo sólo en el modal de Quaia */
+#quaiaModal .modal-header {
+    justify-content: center;  /* centra el contenido horizontalmente */
+    text-align: center;       /* centra el texto dentro del bloque */
+    position: relative;       /* para poder posicionar la X */
+}
+
+/* Mover la X a la esquina derecha sin afectar el centrado del texto */
+#quaiaModal .modal-header .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+}
+
+/* Centrar título y subtítulo en el modal de Quaia */
+#quaiaModal .modal-header {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Botón de cierre en la esquina derecha */
+#quaiaModal .modal-header .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+}
+
+/* Subtítulo (la frase completa) */
+.modal-subtitle {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-top: 2px;
+}
+
+/* Solo el enlace "Fisher et al. (2023)" en azul */
+.modal-paper-link {
+    color: #0066cc;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.modal-paper-link:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+/* --- Estilo de la tabla del modal de Quaia --- */
+#quaiaModal table,
+#quaiaModal th,
+#quaiaModal td {
+    font-family: 'Arial', sans-serif;   /* misma fuente que el resto */
+    font-size: 1.05rem;                 /* ajusta si la quieres más grande/pequeña */
+    color: #000000;                     /* texto negro normal */
+}
+
+/* Quitar el estilo "de consola" de <code> dentro de la tabla */
+#quaiaModal code {
+    font-family: 'Arial', sans-serif;   /* quitar monoespaciada */
+    background: transparent;            /* sin fondo gris */
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.img-sigma-clipping {
+
+    background-color: #ffffff;       /* fondo blanco */
+    padding: 20px; 
+
+    max-width: 100%;
+    height: auto;
+
+    /* Borde */
+    border: 2px solid #dddddd;
+    border-radius: 8px; /* si no quieres esquinas redondas, pon 0 */
+
+    /* Sombra suave */
+    box-shadow: 0 4px 12px rgba(88, 87, 87, 0.25);
+
+    /* Opcional: separar un poquito del texto */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ====== Estilos específicos para el modal de VLS ====== */
+
+/* Bloque que contiene selector + tablas */
+.vls-table-block {
+    max-width: 900px;          /* ancho máximo del bloque */
+    margin: 0 auto;            /* centrado horizontal */
+}
+
+/* Fila del selector (label + select) */
+.vls-selector label {
+    font-weight: bold;
+}
+
+.vls-selector select {
+    min-width: 140px;
+}
+
+/* Tipografía de la tabla dentro del modal de VLS */
+#modalVLS table,
+#modalVLS th,
+#modalVLS td {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;           /* súbelo a 1.05–1.1 si la quieres más grande */
+    color: #000000;
+}
+
+/* Encabezados de la tabla: morados como en el resto de la web */
+#modalVLS th {
+    background-color: #5a2d82;
+    color: #ffffff;
+}
+
+/* Imagen del diagrama VLS al fondo del modal */
+.img-vls-diagram {
+    max-width: 80%;            /* no ocupe toda la pantalla */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+.img-correlation {
+    max-width: 80%;   /* prueba 60%, 50%, 40% según lo que te guste */
+    height: auto;     /* mantiene la proporción */
+    margin: 0 auto;   /* centrada dentro del modal-body */
+}
+
+
 
 
 

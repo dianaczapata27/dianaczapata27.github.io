@@ -59,21 +59,205 @@
     <div class="container">
         <main class="my-5">
             <section class="intro-new row align-items-top mt-12">
-                <h2 class = 'centrar'>Sigma Clipping</h2>
-                <div class="col-12 imagen-presentacion text-center">
-                                    <img src="img/graphics/sigma_clipping.png"
-                                        alt="Sigma clipping illustration"
-                                        class="img-sigma-clipping">
+                <h2 class="centrar">Sigma Clipping</h2>
+
+                <!-- 🔹 Texto debajo del título -->
+                <div class="col-12 text-start">
+                    <p class="justificar">
+                        The foundation of this research is the SubQuaia catalogue.<br>
+                        SubQuaia is constructed from 
+                        <a href="#"
+                        class="link-quaia"
+                        data-bs-toggle="modal"
+                        data-bs-target="#quaiaModal">
+                            <b>Quaia</b>
+                        </a>
+                        by applying two iterations 
+                        of sigma-clipping in the plane of redshift \( z \) and its 
+                        relative error \( z_{\mathrm{error}}/z \).  
+                    
+                        After this filtering, we retain \(\simeq 67.2\%\) of the original 
+                        sample with \( G < 20.0 \) and \(\simeq 61.3\%\) of the sample with 
+                        \( G < 20.5 \).
+                    </p>
                 </div>
-        
-                
+
+                <!-- 🔹 Imagen -->
+                <div class="col-12 imagen-presentacion text-center">
+                    <img src="img/graphics/sigma_clipping.png"
+                        alt="Sigma clipping illustration"
+                        class="img-sigma-clipping">
+                </div>
+            </section>
         </main>
     </div>
 
+    <!-- Modal Quaia -->
+<div class="container">
+    <main >
+        <section class="intro-new row align-items-top mt-12">
+
+            <!-- MODAL de Quaia -->
+            <div class="modal modal-xl fade" id="quaiaModal" tabindex="-1"
+                 aria-labelledby="quaiaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div>
+                                <h5 class="modal-title" id="quaiaModalLabel">
+                                    <em>Quaia</em> catalog parameters
+                                </h5>
+                                <p class="modal-subtitle">
+                                    Table adapted from
+                                    <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad1328"
+                                    target="_blank"
+                                    class="modal-paper-link">
+                                        Fisher et al. (2023)
+                                    </a>.
+                                
+                                </p>
+                            </div>
+                            <button type="button" class="btn-close ms-auto"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+
+                        <div class="modal-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Column Name</th>
+                                            <th>Symbol</th>
+                                            <th>Units</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>source_id</code></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>DR3 source identifier from <em>Gaia</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>unwise_objid</code></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>DR1 source identifier from unWISE</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>redshift.quaia</code></td>
+                                            <td>\( z \)</td>
+                                            <td></td>
+                                            <td>Spectrophotometric redshift estimate</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>redshift.quaia.err</code></td>
+                                            <td>\( z_{\mathrm{error}} \)</td>
+                                            <td></td>
+                                            <td>1\(\sigma\) uncertainty in the spectrophotometric redshift</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>ra</code></td>
+                                            <td></td>
+                                            <td>degrees</td>
+                                            <td>Right ascension</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dec</code></td>
+                                            <td></td>
+                                            <td>degrees</td>
+                                            <td>Declination</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>l</code></td>
+                                            <td></td>
+                                            <td>degrees</td>
+                                            <td>Galactic longitude</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>b</code></td>
+                                            <td></td>
+                                            <td>degrees</td>
+                                            <td>Galactic latitude</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>phot_g_mean_mag</code></td>
+                                            <td>\( G \)</td>
+                                            <td>mag</td>
+                                            <td>Mean magnitude in the <em>Gaia</em> G band</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>phot_bp_mean_mag</code></td>
+                                            <td>\( BP \)</td>
+                                            <td>mag</td>
+                                            <td>Integrated BP magnitude from <em>Gaia</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>phot_rp_mean_mag</code></td>
+                                            <td>\( RP \)</td>
+                                            <td>mag</td>
+                                            <td>Integrated RP magnitude from <em>Gaia</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>mag_w1_vg</code></td>
+                                            <td>\( W1 \)</td>
+                                            <td>mag</td>
+                                            <td>W1 magnitude from unWISE</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>mag_w2_vg</code></td>
+                                            <td>\( W2 \)</td>
+                                            <td>mag</td>
+                                            <td>W2 magnitude from unWISE</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pm</code></td>
+                                            <td>\( \mu_{\text{pm}} \)</td>
+                                            <td>mas/yr</td>
+                                            <td>Proper motion</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pmra</code></td>
+                                            <td>\( \mu_\alpha^* \)</td>
+                                            <td>mas/yr</td>
+                                            <td>Proper motion in the right ascension direction</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pmdec</code></td>
+                                            <td>\( \mu_\delta \)</td>
+                                            <td>mas/yr</td>
+                                            <td>Proper motion in the declination direction</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pmra.error</code></td>
+                                            <td>\( \sigma_{\mu_\alpha^*} \)</td>
+                                            <td>mas/yr</td>
+                                            <td>Standard error of proper motion in right ascension</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>pmdec.error</code></td>
+                                            <td>\( \sigma_{\mu_\delta} \)</td>
+                                            <td>mas/yr</td>
+                                            <td>Standard error of proper motion in declination</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Fin MODAL Quaia -->
+        </section>
+    </main>
+</div>
 
 
 
-    <div class="text-center mt-5">
+    <div class="text-center mt-0">
         <div class="d-flex justify-content-center gap-4 flex-wrap">
 
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVLS">
@@ -108,22 +292,96 @@
     <script src="script.js"></script>
     
 
+    <!-- MODAL: VLS Samples -->
     <div class="modal modal-xl fade" id="modalVLS" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5">VLS Samples</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title w-100 text-center" id="quaiaModalLabel">
+                     Volume-limited samples (VLS)
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body text-center">
-                    <img src="img/graphics/vls.png" class="img-fluid" alt="VLS">
-                </div>
+                <div class="modal-body">
 
+                    <!-- Bloque que contiene selector + tablas -->
+                    <div class="vls-table-block mx-auto">
+
+                        <!-- Selector justo encima de la tabla -->
+                        <div class="vls-selector d-flex align-items-center justify-content-end mb-2">
+                            <label for="vlsSample" class="me-2 fw-bold">
+                                Select magnitude-limited sample:
+                            </label>
+                            <select id="vlsSample" class="form-select form-select-sm w-auto">
+                                <option value="205">G &lt; 20.5</option>
+                                <option value="200">G &lt; 20.0</option>
+                            </select>
+                        </div>
+
+                        <!-- Tabla para G < 20.5 -->
+                        <div class="table-responsive" id="vlsTable205">
+                            <table class="table table-striped table-bordered align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>\(M_i\) limit</th>
+                                        <th>\(z\) range</th>
+                                        <th>Number of quasars</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>\(M_i \le -21.0\)</td><td>0.087 – 0.364</td><td>16174</td></tr>
+                                    <tr><td>\(M_i \le -22.0\)</td><td>0.132 – 0.533</td><td>46402</td></tr>
+                                    <tr><td>\(M_i \le -23.0\)</td><td>0.162 – 0.774</td><td>73641</td></tr>
+                                    <tr><td>\(M_i \le -24.0\)</td><td>0.259 – 1.118</td><td>117027</td></tr>
+                                    <tr><td>\(M_i \le -25.0\)</td><td>0.331 – 1.615</td><td>166079</td></tr>
+                                    <tr><td>\(M_i \le -26.0\)</td><td>0.637 – 2.340</td><td>157021</td></tr>
+                                    <tr><td>\(M_i \le -27.0\)</td><td>0.835 – 3.414</td><td>71345</td></tr>
+                                    <tr><td>\(M_i \le -28.0\)</td><td>1.311 – 4.635</td><td>9646</td></tr>
+                                    <tr><td>\(M_i \le -29.0\)</td><td>1.938 – 4.486</td><td>207</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tabla para G < 20.0 (oculta al inicio) -->
+                        <div class="table-responsive d-none" id="vlsTable200">
+                            <table class="table table-striped table-bordered align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>\(M_i\) limit</th>
+                                        <th>\(z\) range</th>
+                                        <th>Number of quasars</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>\(M_i \le -21.0\)</td><td>0.087 – 0.299</td><td>6535</td></tr>
+                                    <tr><td>\(M_i \le -22.0\)</td><td>0.132 – 0.441</td><td>21530</td></tr>
+                                    <tr><td>\(M_i \le -23.0\)</td><td>0.162 – 0.643</td><td>32836</td></tr>
+                                    <tr><td>\(M_i \le -24.0\)</td><td>0.259 – 0.931</td><td>49878</td></tr>
+                                    <tr><td>\(M_i \le -25.0\)</td><td>0.331 – 1.344</td><td>66993</td></tr>
+                                    <tr><td>\(M_i \le -26.0\)</td><td>0.638 – 1.943</td><td>71744</td></tr>
+                                    <tr><td>\(M_i \le -27.0\)</td><td>0.982 – 2.824</td><td>43334</td></tr>
+                                    <tr><td>\(M_i \le -28.0\)</td><td>1.508 – 4.135</td><td>7699</td></tr>
+                                    <tr><td>\(M_i \le -29.0\)</td><td>2.586 – 4.486</td><td>145</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div> <!-- fin vls-table-block -->
+
+                    <!-- Imagen al final del modal -->
+                    <div class="text-center mt-4">
+                        <img src="img/graphics/vls.png"
+                            class="img-fluid img-vls-diagram"
+                            alt="VLS diagram">
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+
 
     <div class="modal modal-xl fade" id="modalLF" tabindex="-1" aria-labelledby="modalLFLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -163,12 +421,23 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5">TExto estoe s un texto y puedo poenr l oque sea </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title w-100 text-center" id="quaiaModalLabel">
+                     Correlation Function
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- 🔹 Ecuación Landy–Szalay -->
+                <div class="text-center mb-2">
+                    \[
+                        \xi(r) = \frac{DD(r) - 2DR(r) + RR(r)}{RR(r)}
+                    \]
                 </div>
 
                 <div class="modal-body text-center">
-                    <img src="img/graphics/correlation_function.png" class="img-fluid" alt="Correlation">
+                    <img src="img/graphics/correlation_function.png"
+                        class="img-fluid img-correlation"
+                        alt="Correlation">
                 </div>
 
             </div>
@@ -194,6 +463,31 @@
     </div>
 
     <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const vlsSelect = document.getElementById("vlsSample");
+        if (!vlsSelect) return;
+
+        const table205 = document.getElementById("vlsTable205");
+        const table200 = document.getElementById("vlsTable200");
+
+        vlsSelect.addEventListener("change", function () {
+            if (vlsSelect.value === "205") {
+                table205.classList.remove("d-none");
+                table200.classList.add("d-none");
+            } else {
+                table200.classList.remove("d-none");
+                table205.classList.add("d-none");
+            }
+
+            // Para que MathJax vuelva a procesar los \( ... \)
+            if (window.MathJax && MathJax.typeset) {
+                MathJax.typeset();
+            }
+        });
+    });
+
+
     document.getElementById("lfSelector").addEventListener("change", function () {
         const img = document.getElementById("lfImage");
 
