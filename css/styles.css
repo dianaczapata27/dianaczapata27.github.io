@@ -969,6 +969,13 @@ th {
     margin: 0 auto;
 }
 
+/* Dropdown del navbar se abre al pasar el mouse en pantallas grandes */
+@media (min-width: 992px) {  /* lg hacia arriba */
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
 
 
 
