@@ -931,6 +931,43 @@ th {
     margin: 0 auto;
 }
 
+/* ===== Sección: Distribución espacial ===== */
+
+.distribucion-espacial .selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 15px auto 20px;
+    max-width: 900px;          /* controla el ancho del bloque del selector */
+}
+
+.distribucion-espacial .contenedor-paneles {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px;
+    max-width: 1000px;          /* ancho de la “ventana” */
+}
+
+.distribucion-espacial .panel {
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    text-align: center;
+}
+
+.distribucion-espacial .panel h4 {
+    margin-bottom: 10px;
+}
+
+.distribucion-espacial .panel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 
 

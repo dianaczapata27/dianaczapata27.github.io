@@ -80,6 +80,8 @@
             >
         </div>
     </div>
+
+
 </section>
 
 
@@ -110,16 +112,43 @@
     </div>
 </section>
 
+<section class="intro-new mt-5 distribucion-espacial">
+    <h2 class="centrar">Spatial distribution</h2>
+
+    <!-- Selector de corte -->
+    <div class="selection-container">
+        <label for="spatialSelector">
+            Select the cut in magnitude:
+        </label>
+        <select id="spatialSelector">
+            <option value="-24">Mᵢ &le; -24</option>
+            <option value="-23">Mᵢ &le; -23</option>
+            <option value="-22">Mᵢ &le; -22</option>
+        </select>
+    </div>
+
+    <!-- Ventana con una sola imagen -->
+    <div class="contenedor-paneles">
+        <div class="panel">
+            <h4>Spatial distribution</h4>
+            <img id="spatialImage"
+                 src="img/graphics/distribucion_espacial_red.png"
+                 alt="Spatial distribution">
+        </div>
+    </div>
+</section>
+
+
     <!-- Bootstrap JS (obligatorio para que funcione la hamburguesa) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Tu JS propio, si lo usas -->
     <script src="script.js"></script>
-    
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     // ====================
-    // Barrido angular
+    // Barrido angular (ya lo tienes)
     // ====================
     const selector = document.getElementById("barridoSelector");
     const imgQuasar = document.getElementById("barridoQuasar");
@@ -152,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // ====================
-    // Correlation function
+    // Correlation function (ya lo tienes)
     // ====================
     const corrSelector = document.getElementById("correlationSelector");
     const corrImg = document.getElementById("correlationImage");
@@ -172,8 +201,31 @@ document.addEventListener("DOMContentLoaded", function () {
         corrSelector.addEventListener("change", actualizarCorrelation);
         actualizarCorrelation();
     }
+
+    // ====================
+    // Spatial distribution (NUEVA)
+    // ====================
+    const spatialSelector = document.getElementById("spatialSelector");
+    const spatialImg = document.getElementById("spatialImage");
+
+    if (spatialSelector && spatialImg) {
+        const spatialImages = {
+            "-24": "img/graphics/distribucion_espacial_red.png",
+            "-23": "img/graphics/distribucion_espacial_green.png",
+            "-22": "img/graphics/distribucion_espacial_orange.png"
+        };
+
+        function actualizarSpatial() {
+            const value = spatialSelector.value;
+            spatialImg.src = spatialImages[value];
+        }
+
+        spatialSelector.addEventListener("change", actualizarSpatial);
+        actualizarSpatial();
+    }
 });
 </script>
+
 
 
     <footer class="py-3 text-center">
