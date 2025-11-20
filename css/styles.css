@@ -1396,3 +1396,106 @@ th {
     padding-left: 1.2rem;    /* sangría a la izquierda */
     margin: 0;
 }
+
+
+
+.page-title {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.page-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+/* Carousel container */
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Mural images */
+.mural-img {
+    max-height: 80vh;        /* que no ocupen todo el alto de la pantalla */
+    object-fit: contain;     /* respeta proporciones sin recortar */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Caption styling */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 0.35rem 1rem;
+}
+
+body.murals-page {
+    background-color: #000000;  /* el color oscuro que habíamos puesto */
+    color: #ffffff;
+
+ /* 🔹 estrellitas superpuestas */
+    background-image: url("../img/murals/background.png");
+    background-repeat: repeat;        /* se repite en mosaico */
+    background-size: 300px auto;      /* ajusta el tamaño del patrón */
+    background-attachment: fixed;     /* opcional: estrellas “fijas” al hacer scroll */
+}
+
+/* Flechas del carrusel con círculo blanco translúcido */
+body.murals-page .carousel-control-prev,
+body.murals-page .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.65); /* blanco translúcido */
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;                    /* que no se vea desvanecido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tamaño del ícono de la flecha dentro del círculo */
+body.murals-page .carousel-control-prev-icon,
+body.murals-page .carousel-control-next-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    filter: invert(0);   /* flecha oscura sobre fondo claro */
+}
+
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.45);/* sombra leve alrededor */
+}
+
+
+
+/* Opcional, por si quieres darle estilo general al título */
+.legacy-title {
+    font-size: 3.5rem;    /* prueba 2rem, 2.5rem, 3rem, etc. */
+    font-weight: 700;     /* opcional, para que se vea más fuerte */
+}
+
+
+/* Tachado artístico solo en "In" */
+.strike-in {
+    position: relative;
+    display: inline-block;
+}
+
+.strike-in::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    height: 5px;                             /* grosor de la línea */
+    background: rgba(225, 46, 46, 0.95);     /* rojo tipo marcador */
+    top: 58%;                                /* dónde cruza las letras */
+    transform: rotate(-10deg);                /* un poquito inclinado */
+    border-radius: 999px;                    /* extremos redondeados */
+    box-shadow: 0 0 2px rgba(156, 156, 156, 0.7); /* efecto “tiza/marcador” */
+}
+
