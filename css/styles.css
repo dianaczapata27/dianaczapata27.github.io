@@ -1379,3 +1379,20 @@ th {
     border: 1px solid #ddd;         /* borde suave */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombrita linda */
 }
+
+.halo-ref {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.halo-description {
+    font-size: 1.55rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.halo-description {
+    list-style-type: disc;   /* o 'circle' si quieres círculo hueco */
+    padding-left: 1.2rem;    /* sangría a la izquierda */
+    margin: 0;
+}

@@ -573,21 +573,38 @@
                     <h2 class="centrar mb-3">Halo-based method</h2>
 
                     <!-- Equation -->
-                    <p class="text-center mb-3 halo-equation">
+                    <p class="text-center mb-2 halo-equation">
+                        <br>
                         \[
                         \rho_i(\mathbf{r}_i, M_i) =
                         \eta(\mathbf{r}, M) \otimes \Phi(\mathbf{r}_i, M_i)
                         \]
                     </p>
 
-                    <!-- Explanation -->
-                    <p class="halo-description">
-                        Here, \(\eta(\mathbf{r}, M)\) denotes the density profile of a single halo
-                        of mass \(M\) as a function of position \(\mathbf{r}\).
-                        The function \(\Phi(\mathbf{r}_i, M_i)\) encodes the mass and position of the
-                        haloes in the catalogue. The convolution symbol \(\otimes\) represents the 
-                        composition of these two quantities, taking into account the domain of the haloes.
+                    <!-- Reference just below the equation -->
+                    <p class="text-center mb-3 halo-ref">
+                        Based on
+                        <a href="https://academic.oup.com/mnras/article/417/2/1303/984467?login=false"
+                        target="_blank">
+                        Muñoz-Cuartas et al. (2011)
+                        </a>.
                     </p>
+
+                    <!-- Explanation as bullet points -->
+                    <ul class="halo-description">
+                        <br>
+                        <li>
+                            \(\eta(\mathbf{r}, M)\): average density profile around a halo of mass \(M\).
+                        </li> <br>
+                        <li>
+                            \(\Phi(\mathbf{r}_i, M_i)\): catalogue encoding halo positions \(\mathbf{r}_i\) and masses \(M_i\).
+                        </li><br>
+                        <li>
+                            \(\otimes\): composition that combines \(\eta\) and \(\Phi\) to build the density contribution
+                            of each halo within its domain.
+                        </li><br>
+                    </ul>
+
                 </div>
 
                 <!-- 🔹 Columna derecha: síntesis + imagen -->
