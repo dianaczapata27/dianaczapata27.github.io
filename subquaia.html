@@ -57,7 +57,7 @@
 
 
     <div class="container">
-        <main class="my-5">
+        <main class="my-1">
             <section class="intro-new row align-items-top mt-12">
                 <h2 class="centrar">Sigma Clipping</h2>
 
@@ -260,24 +260,26 @@
     <div class="text-center mt-0">
         <div class="d-flex justify-content-center gap-4 flex-wrap">
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVLS">
+            <button type="button" class="btn btn-vls" data-bs-toggle="modal" data-bs-target="#modalVLS">
                 VLS Samples
             </button>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLF">
+            <button type="button" class="btn btn-vls" data-bs-toggle="modal" data-bs-target="#modalLF">
                 Luminosity Function
             </button>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCorrelation">
+            <button type="button" class="btn btn-vls" data-bs-toggle="modal" data-bs-target="#modalCorrelation">
                 Correlation Function
             </button>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMass">
+            <button type="button" class="btn btn-vls" data-bs-toggle="modal" data-bs-target="#modalMass">
                 Halo Mass Assignment
             </button>
 
         </div>
     </div>
+
+
    
 
 
@@ -383,36 +385,136 @@
     </div>
 
 
-    <div class="modal modal-xl fade" id="modalLF" tabindex="-1" aria-labelledby="modalLFLabel" aria-hidden="true">
+    <!-- 🔹 MODAL: Luminosity Function -->
+    <div class="modal modal-xl fade" id="modalLF" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
-                <!-- Header -->
+                <!-- Header con título morado y selector centrado -->
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLFLabel">
-                        Luminosity Function
-                        <select id="lfSelector" class="estrellas">
-                            <option value="subquaia">SubQuaia</option>
-                            <option value="vls21">VLS Mᵢ ≤ -21</option>
-                            <option value="vls23">VLS Mᵢ ≤ -23</option>
-                        </select>
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
+                    <div class="w-100 text-center">
+                        <h5 class="modal-title mb-2" id="modalLFLabel">
+                            Luminosity Function
+                        </h5>
 
-                <!-- Body -->
-                <div class="modal-body">
-                    <div class="text-center">
-                        <img id="lfImage"
-                            src="img/graphics/luminosity_function_croton_20_5.png"
-                            class="img-fluid"
-                            alt="Luminosity Function">
+                        <hr class="lf-header-divider">
+
                     </div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-            </div>
-        </div>
-    </div>
+                <!-- Body: izquierda texto/tabla/ecuación, derecha imagen -->
+                <div class="modal-body lf-modal-body">
+
+                    <div class="row g-4 lf-row">
+                        
+                        <!-- 🔸 Columna izquierda: texto + tabla + ecuación -->
+                        <div class="col-12 col-lg-6 d-flex align-items-center">
+                            <div class="lf-top w-100">
+
+
+                                <!-- 🔹 Selector -->
+                                <div class="d-flex justify-content-center align-items-center mb-3 lf-selector-group">
+                                    <label for="lfSelector" class="me-2 fw-bold lf-selector-label">
+                                        Select magnitude-limited sample:
+                                    </label>
+                                    <select id="lfSelector" class="form-select w-auto lf-selector-select estrellas">
+                                        <option value="subquaia">SubQuaia</option>
+                                        <option value="vls21">VLS Mᵢ ≤ -21</option>
+                                        <option value="vls23">VLS Mᵢ ≤ -23</option>
+                                    </select>
+                                </div>
+
+                                
+                                <h5 class="modal-title w-100 text-center mb-3" id="quaiaModalLabel">
+                                    Croton Function
+                                </h5>
+
+                                <!-- Ecuación -->
+                                <p class="text-center mb-3">
+                                    \[
+                                    \Phi(M_{b_J},z) =
+                                    \Phi\left(M^{\ast}_{b_J}\right)\,
+                                    \frac{10^{-0.4\left(M - M^{\ast}\right)}}
+                                    {10^{0.4\alpha\left(M - M^{\ast}\right)} +
+                                    10^{0.4\beta\left(M - M^{\ast}\right)}}
+                                    \]
+                                </p>
+                            
+                                <!-- Tabla Croton -->
+                                <div class="lf-table-wrapper table-responsive">
+                                    <table class="table table-sm lf-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Redshift</th>
+                                                <th>&alpha;</th>
+                                                <th>&beta;</th>
+                                                <th>
+                                                    M<sup>*</sup>
+                                                    <sub>b<sub>J</sub></sub>(z=0)
+                                                </th>
+                                                <th>k₁</th>
+                                                <th>k₂</th>
+                                                <th>&Phi;<sup>*</sup> (Mpc⁻³ mag⁻¹)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>z &lt; 3.0</td>
+                                                <td>-3.31</td>
+                                                <td>-1.09</td>
+                                                <td>-21.61</td>
+                                                <td>1.39</td>
+                                                <td>-0.29</td>
+                                                <td>1.67 &times; 10<sup>-6</sup></td>
+                                            </tr>
+                                            <tr>
+                                                <td>z ≥ 3.0</td>
+                                                <td>-3.31 + 0.5(z − 3)</td>
+                                                <td>-1.09</td>
+                                                <td>-21.61</td>
+                                                <td>1.22</td>
+                                                <td>-0.23</td>
+                                                <td>1.67 &times; 10<sup>-6</sup></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <p class="lf-caption text-center mt-2">
+                                    Parameters for the double power-law fit of the quasar luminosity function
+                                    in two redshift regimes. Table adapted from
+                                    <a href="https://academic.oup.com/mnras/article/394/2/1109/1073752?login=false"
+                                    target="_blank"
+                                    class="lf-croton-link">
+                                        Croton et al. (2009)
+                                    </a>.
+                                </p> 
+                            </div>
+                        </div>
+
+                        <!-- 🔸 Columna derecha: imagen (cambia con el selector) -->
+                        <div class="col-12 col-lg-6">
+                            <div class="lf-bottom text-center">
+                                <img id="lfImage"
+                                    src="img/graphics/luminosity_function_croton_20_5.png"
+                                    class="img-fluid img-lf"
+                                    alt="Luminosity Function">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div> <!-- /modal-body -->
+
+            </div> <!-- /modal-content -->
+        </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
+
+
+
+
 
 
 

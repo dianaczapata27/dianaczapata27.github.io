@@ -1191,4 +1191,152 @@ th {
 
 
 
+/* ==== Botones con relieve (VLS, LF, Correlation, Mass) ==== */
 
+.btn-vls {
+    background-color: #e0c2f9;      /* morado clarito */
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;           /* pastillita */
+    padding: 8px 22px;
+
+    box-shadow: 4px 4px 0 #4a256e;  /* sombra corrida hacia abajo/derecha */
+    transform: translate(0, 0);
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover: azul + sombra un poquito más larga */
+.btn-vls:hover {
+    background-color: #3172d1;      /* azul al pasar el mouse */
+    box-shadow: 6px 6px 0 #244a8a;
+    color: #ffffff;
+}
+
+/* Active: se hunde (menos sombra y se mueve) */
+.btn-vls:active {
+    background-color: #2558a3;
+    box-shadow: 2px 2px 0 #1b3664;
+    transform: translate(2px, 2px);
+}
+
+/* Para que el enfoque no ponga borde feo */
+.btn-vls:focus {
+    outline: none;
+    box-shadow: 2px 2px 0 #1b3664;
+}
+
+/* ===== Luminosity Function modal layout (versión vertical) ===== */
+
+#modalLFLabel {
+    color: #5a2d82;   /* título morado */
+    font-weight: bold;
+}
+
+/* Contenedor general del body del modal de LF */
+.lf-modal-body {
+    padding: 20px 25px;
+}
+
+/* Fila principal del contenido de LF */
+.lf-row {
+    /* opcional: más espacio horizontal en pantallas grandes */
+}
+
+/* Bloque superior: texto + tabla + ecuación */
+.lf-top {
+    /* Antes limitabas a 900px y centrabas.
+       Ahora, como está en una columna, dejamos que use todo el ancho. */
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Link a Croton et al. */
+.lf-croton-link {
+    color: #1e6bd6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.lf-croton-link:hover {
+    text-decoration: underline;
+}
+
+/* Tabla Croton */
+.lf-table-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.lf-table th,
+.lf-table td {
+    font-size: 0.85rem;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+.lf-table th {
+    background-color: #5a2d82 !important;
+    color: #ffffff !important;
+}
+
+/* Caption debajo de la tabla */
+.lf-caption {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Separador si lo vuelves a usar en otro lado */
+.lf-divider {
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Bloque inferior: imagen de la función de luminosidad */
+.lf-bottom {
+    text-align: center;
+}
+
+/* Imagen de la LF: más grande en la columna derecha */
+.img-lf {
+    width: 100%;         /* ocupa todo el ancho de la columna */
+    max-width: 100%;     /* sin límite extra */
+    max-height: 90vh;    /* opcional: no más del 70% del alto de la ventana */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+/* Solo para este modal en particular */
+#modalLF .modal-dialog {
+    --bs-modal-width: 1300px;   /* prueba 1200–1400px según tu gusto */
+}
+
+/* Quitar la línea inferior del header solo en este modal */
+#modalLF .modal-header {
+    border-bottom: none;
+}
+
+.lf-selector-group {
+    position: relative;
+    top: -70px;        /* súbelo más o menos cambiando este valor */
+    margin-bottom: 0.5rem;  /* opcional: controla el espacio con Croton */
+}
+
+.lf-selector-group label {
+    margin-bottom: 0;
+}
+
+.lf-selector-group select {
+    font-size: 1.0rem;
+}
+
+
+.lf-selector-label {
+    font-size: 1.1rem;   /* prueba 1.05, 1.1, 1.15 según te guste */
+}
