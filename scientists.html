@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logos/femcen.png">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the scientists</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="murals-page">
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand horizontal-brand" href="index.html">
+                    <img src="img/logos/logo.png" alt="Logo" width="40" class="d-inline-block align-text-top">
+                    Diana C. Zapata-Zuluaga
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- 🔹 Item con dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active"
+                            href="Thesis_Subquaia.html"
+                            id="thesisDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                                Thesis - Quaia
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="thesisDropdown">
+                                <li><a class="dropdown-item" href="Thesis_Subquaia.html">Abstract</a></li>
+                                <li><a class="dropdown-item" href="subquaia.html">SubQuaia &amp; density field reconstruction</a></li>
+                                <li><a class="dropdown-item" href="disperse.html">Large-scale structure with DisPerSE</a></li>
+                                <li><a class="dropdown-item" href="Overdensity-based.html">Overdensity analysis</a></li>
+                            </ul>
+                        </li>
+
+                            <!-- 🔹 Nuevo item con dropdown: Mural Project -->
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active"
+                                href="#"
+                                id="muralsDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                    Mural Project
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="muralsDropdown">
+                                    <li><a class="dropdown-item" href="murals.html">About the murals</a></li>
+                                    <li><a class="dropdown-item" href="scientists.html">Meet the scientists</a></li>
+                                </ul>
+                            
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container-fluid py-0 px-5">
+
+        <!-- 🔹 Título centrado a ancho completo -->
+        <h2 class="centrar legacy-title">
+            Legados <span class="strike-in">In</span>visibles
+        </h2>
+
+
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="carousel-container">
+                    <figure class="icon-cards">
+                        <div class="icon-cards__content">
+                            <!-- 1. Rosalind Franklin -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/3.RosalindFranklin.jpeg"
+                                    alt="Mural of Rosalind Franklin">
+                            </div>
+
+                            <!-- 2. Jeanne Baret -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/4.JeanneBaret.jpeg"
+                                    alt="Mural of Jeanne Baret">
+                            </div>
+
+                            <!-- 3. Maryam Mirzakhani -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/5.MaryamMirzakhani.jpeg"
+                                    alt="Mural of Maryam Mirzakhani">
+                            </div>
+
+                            <!-- 4. Ana María Rey -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/6.AnaMariaRey.jpeg"
+                                    alt="Mural of Ana María Rey">
+                            </div>
+
+                            <!-- 5. Ángela Restrepo -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/7.AngelaRestrepo.jpeg"
+                                    alt="Mural of Ángela Restrepo">
+                            </div>
+
+                            <!-- 6. Rebeca Gerschman -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/8.RebecaGerschman.jpeg"
+                                    alt="Mural of Rebeca Gerschman">
+                            </div>
+
+                            <!-- 7. Doris Hinestroza -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/9.DorisHinestroza.jpeg"
+                                    alt="Mural of Doris Hinestroza">
+                            </div>
+
+                            <!-- 8. Katherine Johnson -->
+                            <div class="icon-cards__item">
+                                <img src="img/murals/10.KatherineJohnson.jpeg"
+                                    alt="Mural of Katherine Johnson">
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 🔹 Botones de científicas -->
+        <div class="scientist-buttons row g-3 justify-content-center mt-4 mb-4">
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalRosalind">
+                    Rosalind Franklin
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalJeanne">
+                    Jeanne Baret
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalMaryam">
+                    Maryam Mirzakhani
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalAnaMaria">
+                    Ana María Rey
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalAngela">
+                    Ángela Restrepo
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalRebeca">
+                    Rebeca Gerschman
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalDoris">
+                    Doris Hinestroza
+                </button>
+            </div>
+
+            <div class="col-6 col-md-3 text-center">
+                <button type="button" class="btn scientist-btn" data-bs-toggle="modal" data-bs-target="#modalKatherine">
+                    Katherine Johnson
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+                <hr>
+                <div class="tools-container-grupos d-flex justify-content-center align-items-center flex-wrap gap-3">
+                    <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ciencias-exactas-naturales/estudiar-facultad/pregrados/astronomia" target="_blank">
+                        <img src="img/logos/university.png" alt="Universidad">
+                    </a>
+                    <a href="https://www.facebook.com/colectivobiografos/?locale=es_LA" target="_blank">
+                        <img src="img/logos/biografos.png" alt="FACom"> 
+                    </a>
+                    <a class="img" href="https://linktr.ee/colectivafemcen" target="_blank">
+                        <img src="img/logos/femcen.png" alt="FEMCEN">
+                    </a>
+                </div>
+
+    <footer class="py-3 text-center">
+        <p class="mb-0">&copy; 2025 - Diana C. Zapata Zuluaga - FACom</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+<!-- 🔹 Modal Rosalind Franklin -->
+<div class="modal fade" id="modalRosalind" tabindex="-1" aria-labelledby="modalRosalindLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRosalindLabel">Rosalind Franklin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/3.RosalindFranklin.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Rosalind Franklin">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1920-1958)</em></span> <br>
+                British chemist recognized today for her discovery of the helical structure of DNA through X-ray 
+                diffraction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Jeanne Baret -->
+<div class="modal fade" id="modalJeanne" tabindex="-1" aria-labelledby="modalJeanneLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalJeanneLabel">Jeanne Baret</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/4.JeanneBaret.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Jeanne Baret">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1740-1807)</em></span> <br>
+                French botanist documented as the first woman to carry out a botanical expedition. 
+                She catalogued various species of the genus
+                <a href="https://en.wikipedia.org/wiki/Bougainvillea" target="_blank">
+                    <em>Bougainvillea</em>
+                </a>. 
+            </p>
+            <p>
+                She reflects how women 
+                had to change their identity by dressing as men in order to be able to study.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Maryam Mirzakhani -->
+<div class="modal fade" id="modalMaryam" tabindex="-1" aria-labelledby="modalMaryamLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalMaryamLabel">Maryam Mirzakhani</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/5.MaryamMirzakhani.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Maryam Mirzakhani">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1977-2017)</em></span><br>
+            Iranian mathematician, first woman to win the Fields Medal for her work in hyperbolic 
+            and symplectic geometry.</p>
+              <p>
+            To learn more about her life and work, you can watch the documentary: <br>
+            <a href="https://www.youtube.com/watch?v=85ghS87i3z0" target="_blank">
+            <em>Secrets of the Surface: The Mathematical Vision of Maryam Mirzakhani</em>
+            </a>.
+        </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Ana María Rey -->
+<div class="modal fade" id="modalAnaMaria" tabindex="-1" aria-labelledby="modalAnaMariaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAnaMariaLabel">Ana María Rey</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/6.AnaMariaRey.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Ana María Rey">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1977- )</em></span><br>
+            Colombian physicist, noted for her work in atomic, molecular, and optical physics, 
+            ultracold atoms, and quantum information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Ángela Restrepo -->
+<div class="modal fade" id="modalAngela" tabindex="-1" aria-labelledby="modalAngelaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAngelaLabel">Ángela Restrepo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/7.AngelaRestrepo.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Ángela Restrepo">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1931-2022)</em></span><br>
+                Colombian microbiologist. She was a professor at Universidad de Antioquia (Medellin, Colombia), with an extensive career in the 
+                investigation of diseases caused by fungi and their treatment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Rebeca Gerschman -->
+<div class="modal fade" id="modalRebeca" tabindex="-1" aria-labelledby="modalRebecaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRebecaLabel">Rebeca Gerschman</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/8.RebecaGerschman.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Rebeca Gerschman">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1903-1986)</em></span><br>
+                Argentine chemist, pioneer in the study of the production of free radicals 
+                and their influence on biological systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Doris Hinestroza -->
+<div class="modal fade" id="modalDoris" tabindex="-1" aria-labelledby="modalDorisLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDorisLabel">Doris Hinestroza</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/9.DorisHinestroza.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Doris Hinestroza">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1954-2019)</em></span><br>
+                Colombian mathematician. She was a professor and researcher at Universidad del Valle (Cali, Colombia), 
+                recognized for her work on applied inverse problems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🔹 Modal Katherine Johnson -->
+<div class="modal fade" id="modalKatherine" tabindex="-1" aria-labelledby="modalKatherineLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered murals-modal-dialog">
+    <div class="modal-content murals-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalKatherineLabel">Katherine Johnson</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3 align-items-start">
+          <div class="col-12 col-md-7 text-center">
+            <img src="img/murals/10.KatherineJohnson.jpeg"
+                 class="img-fluid scientist-modal-img"
+                 alt="Mural of Katherine Johnson">
+          </div>
+          <div class="col-12 col-md-5">
+            <p><span class="first-line-center"><em>(1918-2020)</em></span><br>
+                American astrophysicist, recognized for calculating the orbit for the first Moon 
+                landing and for being part of NASA's “human computers,” a group of African American women.<br>
+                <p>
+                To learn more about her story, you can watch the film
+                <a href="https://en.wikipedia.org/wiki/Hidden_Figures" target="_blank">
+                <em>Hidden Figures</em>
+                </a>.
+                </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

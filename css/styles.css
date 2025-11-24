@@ -1575,3 +1575,119 @@ body.murals-page {
         transform: translateZ(-700px) rotateY(-360deg);
     }
 }
+
+.btn.murals-btn {
+    background-color: #ffffff;                      /* botón blanco */
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    color: #111827;                                 /* texto oscuro */
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.6rem 1.8rem;
+    border-radius: 999px;                           /* píldora */
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.7),         /* brillo blanco alrededor */
+        0 6px 0 rgba(137, 137, 137, 0.95);         /* “sombra” clara hacia abajo */
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease,
+        background-color 0.15s ease,
+        filter 0.15s ease;
+}
+
+.btn.murals-btn:hover {
+    background-color: #f9fafb;                      /* un pelín más suave */
+    filter: brightness(1.03);
+    text-decoration: none;
+}
+
+.btn.murals-btn:active {
+    transform: translateY(3px);                     /* se hunde */
+    box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.6),          /* menos brillo */
+        0 3px 0 rgba(229, 231, 235, 0.9);          /* sombra más corta */
+}
+
+
+/* Botones de científicas */
+.scientist-btn {
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    color: #111827;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 999px;
+    box-shadow:
+        0 0 6px rgba(114, 60, 60, 0.5),
+        0 4px 0 rgba(164, 162, 162, 0.95);
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease,
+        background-color 0.15s ease,
+        filter 0.15s ease;
+    font-size: 1.1rem;
+}
+
+.scientist-btn:hover {
+    background-color: #f9fafb;
+    filter: brightness(1.03);
+}
+
+.scientist-btn:active {
+    transform: translateY(2px);
+    box-shadow:
+        0 0 4px rgba(255, 255, 255, 0.5),
+        0 2px 0 rgba(229, 231, 235, 0.9);
+}
+
+/* Estilo del modal para que combine con la página */
+.murals-modal {
+    background-color: rgba(255, 255, 255, 0.97);
+    color: #000000;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.murals-modal .modal-header {
+    border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.murals-modal .modal-title {
+    flex: 1;               /* ocupa todo el espacio disponible en el header */
+    text-align: center;    /* centra el texto */
+    font-size: 1.8rem;     /* hazlo más grande (prueba 1.4–1.8) */
+    font-weight: 700;      /* más negrita */
+}
+/* Imagen dentro del modal */
+.scientist-modal-img {
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.scientist-buttons {
+    max-width: 1050px;           /* pruébalo con 600–700px */
+    margin-left: auto;
+    margin-right: auto;         /* centra el bloque */
+}
+
+/* Hacer los modales de científicas más anchos */
+.murals-modal-dialog {
+    max-width: 1500px;   /* prueba 900, 1000, 1100, 1200 */
+}
+
+
+.murals-modal .modal-body p {
+    font-family: "Playfair Display", "Georgia", serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.murals-modal .first-line-center {
+    display: block;        /* para que ocupe una línea completa */
+    text-align: center;
+    margin-bottom: 0.25rem;  /* pequeño espacio debajo, opcional */
+}
