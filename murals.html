@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" type="image/png" href="img/logos/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logos/femcen.png">
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mural project</title>
+    <title>About the murals</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -63,7 +64,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="muralsDropdown">
                                     <li>
                                         <a class="dropdown-item" href="murals.html">
-                                            Murals gallery
+                                            About the murals
                                         </a>
                                     </li>
                                 </ul>
@@ -83,140 +84,96 @@
             Legados <span class="strike-in">In</span>visibles
         </h2>
 
-        <!-- 🔹 A partir de aquí: dos columnas -->
-        <div class="row g-4 align-items-center">
-            
-            <!-- Columna izquierda: carrusel -->
-            <div class="col-12 col-lg-7">
+        <!-- 🔹 Texto introductorio del proyecto -->
+        <div class="murals-intro">
+            <p>
+                <strong>Legados Invisibles</strong> is a project carried out jointly by the feminist collective
+                <a href="https://linktr.ee/colectivafemcen" target="_blank" class="murals-link">FEMCEN</a>,
+                of which I am a member, and the artistic collective
+                <a href="https://www.facebook.com/colectivobiografos/?locale=es_LA" target="_blank" class="murals-link">Biografos</a>
+                from Medellín. Its goal was to create an artistic intervention in the hallway of the Institute of Physics at the
+                Universidad de Antioquia (Medellin, Colombia), painting eight murals of women scientists from different fields—
+                biology/microbiology, mathematics, physics/astrophysics, and chemistry. With this intervention, we seek to make
+                visible the contributions that women scientists have made throughout history and to inspire new generations.
+            </p>
+        </div>
+
+        <!-- 🔹 Vista del pasillo (dos imágenes una debajo de la otra) -->
+        <div class="hallway-views row justify-content-center">
+            <div class="col-12 col-lg-6 mb-3 mb-lg-0 text-center">
+                <img
+                    src="img/murals/1.jpeg"
+                    class="img-fluid hallway-img"
+                    alt="Hallway view - part 1"
+                >
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <img
+                    src="img/murals/2.jpeg"
+                    class="img-fluid hallway-img"
+                    alt="Hallway view - part 2"
+                >
+            </div>
+        </div>
+
+
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
                 <div class="carousel-container">
-                    <div id="muralsCarousel" class="carousel slide" data-bs-ride="false">
-
-                        <div class="carousel-inner">
-
+                    <figure class="icon-cards">
+                        <div class="icon-cards__content">
                             <!-- 1. Rosalind Franklin -->
-                            <div class="carousel-item active">
-                                <img
-                                    src="img/murals/3.RosalindFranklin.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Rosalind Franklin"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Rosalind Franklin</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/3.RosalindFranklin.jpeg"
+                                    alt="Mural of Rosalind Franklin">
                             </div>
 
                             <!-- 2. Jeanne Baret -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/4.JeanneBaret.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Jeanne Baret"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Jeanne Baret</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/4.JeanneBaret.jpeg"
+                                    alt="Mural of Jeanne Baret">
                             </div>
 
                             <!-- 3. Maryam Mirzakhani -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/5.MaryamMirzakhani.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Maryam Mirzakhani"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Maryam Mirzakhani</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/5.MaryamMirzakhani.jpeg"
+                                    alt="Mural of Maryam Mirzakhani">
                             </div>
 
                             <!-- 4. Ana María Rey -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/6.AnaMariaRey.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Ana María Rey"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Ana María Rey</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/6.AnaMariaRey.jpeg"
+                                    alt="Mural of Ana María Rey">
                             </div>
 
                             <!-- 5. Ángela Restrepo -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/7.AngelaRestrepo.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Ángela Restrepo"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Ángela Restrepo</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/7.AngelaRestrepo.jpeg"
+                                    alt="Mural of Ángela Restrepo">
                             </div>
 
                             <!-- 6. Rebeca Gerschman -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/8.RebecaGerschman.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Rebeca Gerschman"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Rebeca Gerschman</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/8.RebecaGerschman.jpeg"
+                                    alt="Mural of Rebeca Gerschman">
                             </div>
 
                             <!-- 7. Doris Hinestroza -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/9.DorisHinestroza.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Doris Hinestroza"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Doris Hinestroza</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/9.DorisHinestroza.jpeg"
+                                    alt="Mural of Doris Hinestroza">
                             </div>
 
                             <!-- 8. Katherine Johnson -->
-                            <div class="carousel-item">
-                                <img
-                                    src="img/murals/10.KatherineJohnson.jpeg"
-                                    class="d-block w-100 mural-img"
-                                    alt="Mural of Katherine Johnson"
-                                >
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Katherine Johnson</h5>
-                                </div>
+                            <div class="icon-cards__item">
+                                <img src="img/murals/10.KatherineJohnson.jpeg"
+                                    alt="Mural of Katherine Johnson">
                             </div>
-
                         </div>
-
-                        <!-- Controls -->
-                        <button class="carousel-control-prev" type="button"
-                                data-bs-target="#muralsCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button"
-                                data-bs-target="#muralsCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-
-                    </div>
+                    </figure>
                 </div>
             </div>
-
-            <!-- Columna derecha: texto (a partir del título) -->
-            <div class="col-12 col-lg-4">
-                <!-- aquí va el texto que quieras desarrollar -->
-                <p class="page-subtitle">
-                    Aquí puedes contar la historia del proyecto, el contexto de los murales,
-                    el proceso creativo, o lo que quieras añadir al lado del carrusel.
-                </p>
-            </div>
-
         </div>
     </div>
 
@@ -224,7 +181,10 @@
 
                 <hr>
                 <div class="tools-container-grupos d-flex justify-content-center align-items-center flex-wrap gap-3">
-                    <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/grupos-investigacion/ciencias-naturales-exactas/facom" target="_blank">
+                    <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/unidades-academicas/ciencias-exactas-naturales/estudiar-facultad/pregrados/astronomia" target="_blank">
+                        <img src="img/logos/university.png" alt="Universidad">
+                    </a>
+                    <a href="https://www.facebook.com/colectivobiografos/?locale=es_LA" target="_blank">
                         <img src="img/logos/biografos.png" alt="FACom"> 
                     </a>
                     <a class="img" href="https://linktr.ee/colectivafemcen" target="_blank">

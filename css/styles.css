@@ -1410,11 +1410,7 @@ th {
     color: #ffffff;
 }
 
-/* Carousel container */
-.carousel-container {
-    max-width: 900px;
-    margin: 0 auto;
-}
+
 
 /* Mural images */
 .mural-img {
@@ -1422,13 +1418,6 @@ th {
     object-fit: contain;     /* respeta proporciones sin recortar */
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-}
-
-/* Caption styling */
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 10px;
-    padding: 0.35rem 1rem;
 }
 
 body.murals-page {
@@ -1442,34 +1431,6 @@ body.murals-page {
     background-attachment: fixed;     /* opcional: estrellas “fijas” al hacer scroll */
 }
 
-/* Flechas del carrusel con círculo blanco translúcido */
-body.murals-page .carousel-control-prev,
-body.murals-page .carousel-control-next {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.65); /* blanco translúcido */
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;                    /* que no se vea desvanecido */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Tamaño del ícono de la flecha dentro del círculo */
-body.murals-page .carousel-control-prev-icon,
-body.murals-page .carousel-control-next-icon {
-    width: 1.4rem;
-    height: 1.4rem;
-    filter: invert(0);   /* flecha oscura sobre fondo claro */
-}
-
-.carousel-container {
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.45);/* sombra leve alrededor */
-}
 
 
 
@@ -1499,3 +1460,118 @@ body.murals-page .carousel-control-next-icon {
     box-shadow: 0 0 2px rgba(156, 156, 156, 0.7); /* efecto “tiza/marcador” */
 }
 
+.hallway-views {
+    max-width: 100%;       /* antes 1100px */
+    margin: 0 auto 2rem;
+    padding: 0 1rem;       /* un poquito de aire a los lados, opcional */
+}
+
+.hallway-img {
+    width: 100%;            /* ocupa el ancho de su columna */
+    height: auto;           /* mantiene proporción */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.murals-intro {
+    max-width: 1100px;
+    margin: 1.5rem auto 2rem;
+    padding: 1.25rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #111827;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    line-height: 1.7;
+
+    /* 🔹 tipografía bonita solo para este bloque */
+    font-family: "Playfair Display", "Georgia", serif;
+}
+
+.murals-intro p {
+    margin: 0;
+    text-align: justify;
+}
+
+.murals-link {
+    color: #70319d;          
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.murals-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Contenedor del carrusel horizontal */
+.icon-cards {
+    position: relative;
+    width: 100%;
+    max-width: 650px;          /* puedes subir a 700 si quieres */
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    perspective: 1600px;       /* más grande = efecto 3D más suave */
+}
+
+.icon-cards__content {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    animation: muralsCarousel 28s infinite linear;
+}
+
+/* Cada imagen ocupa todo el contenedor, respeta forma horizontal */
+.icon-cards__item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-cards__item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;      /* no recorta la imagen */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* 🔹 OJO: radio grande → más separación (550px) */
+.icon-cards__item:nth-child(1) {
+    transform: rotateY(0deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(2) {
+    transform: rotateY(45deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(3) {
+    transform: rotateY(90deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(4) {
+    transform: rotateY(135deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(5) {
+    transform: rotateY(180deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(6) {
+    transform: rotateY(225deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(7) {
+    transform: rotateY(270deg) translateZ(700px);
+}
+.icon-cards__item:nth-child(8) {
+    transform: rotateY(315deg) translateZ(700px);
+}
+
+/* 🔁 Animación con el mismo radio pero negativo */
+@keyframes muralsCarousel {
+    from {
+        transform: translateZ(-700px) rotateY(0deg);
+    }
+    to {
+        transform: translateZ(-700px) rotateY(-360deg);
+    }
+}
