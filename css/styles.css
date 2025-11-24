@@ -1398,14 +1398,14 @@ body.murals-page {
 }
 
 .murals-intro {
-    max-width: 1100px;
+    max-width: 1340px;
     margin: 1.5rem auto 2rem;
     padding: 1.25rem 1.5rem;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.90);
     color: #111827;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.7;
 
     font-family: "Playfair Display", "Georgia", serif;
@@ -1591,7 +1591,7 @@ body.murals-page {
 }
 
 .murals-modal-dialog {
-    max-width: 1500px;  
+    max-width: 850px;  
 }
 
 
@@ -1607,3 +1607,80 @@ body.murals-page {
     text-align: center;
     margin-bottom: 0.25rem;  
 }
+
+.ana-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+
+#anaImageMural {
+    display: block;
+    margin: 0 auto;    
+}
+
+
+.ana-fade-image {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+
+.ana-fade-image.is-visible {
+    opacity: 1;
+}
+
+
+#anaImagePortrait {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#anaImagePortrait.ana-secondary {
+    max-width: 55%;   
+}
+
+
+.scientist-modal-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+
+#anaImagePortrait {
+    max-width: 10%;          
+}
+
+.central-mural-contenedor {
+    display: flex;
+    align-items: flex-start;   
+    gap: 20px;                
+    margin-top: 20px;        
+}
+
+.central-mural-img {
+    max-width: 100%;            
+    height: auto;
+    border-radius: 8px;      
+}
+
+.central-mural-texto {
+    flex: 1;                   
+    text-align: justify;       
+}
+
+.central-mural-texto {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 19.9px;                              
+    border-radius: 10px;                       
+    font-size: 1.05rem;  
+    font-family: "Playfair Display", "Georgia", serif;                       
+    line-height: 1.6;                         
+    color: #000;                                
+}
+
