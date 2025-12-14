@@ -1825,3 +1825,34 @@ body.murals-page .ana-dos-fotos .ana-img {
     max-width: none !important;
 }
 
+.disperse-title {
+    max-width: 500px;
+}
+
+.disperse-intro {
+    margin-top: 1.8rem;   
+    margin-bottom: 1.5rem;
+}
+
+.smoothing-title {
+    font-size: 2rem;         /* puedes subir/bajar el tamaño */
+    font-weight: 600;
+    margin-bottom: 0;        /* para que no quede muy separado */
+}
+
+/* Caja blanca con borde sombreado */
+.smoothing-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);  /* sombra */
+    display: inline-block;
+}
+
+/* Imagen dentro de la caja */
+.smoothing-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
