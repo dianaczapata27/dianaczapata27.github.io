@@ -73,9 +73,9 @@
         </nav>
     </header>
 
-    <div class="container my-4">
+    <div class="container my-0">
         <div class="row">
-            <!-- Imagen / título -->
+
             <div class="col-12 text-center">
                 <a href="https://github.com/thierry-sousbie/DisPerSE" target="_blank" rel="noopener noreferrer">
                     <img src="img/logos/disperse.png"
@@ -84,9 +84,9 @@
                 </a>
             </div>
 
-            <!-- Texto pegado debajo -->
+
             <div class="col-12 text-start">
-                <p class="justificar disperse-intro">
+                <p class="disperse-subtitle">
                     Once the density field was reconstructed, we used the DisPerSE code to extract 
                     and visualize the filaments that trace the large-scale structure of the Universe.
                 </p>
@@ -95,11 +95,17 @@
     </div>
 
     <div class="container my-4">
-        <div class="row align-items-center">
+        <div class="row align-items-center smoothing-row">
             <div class="col-12 col-md-4 text-center">
                 <h2 class="smoothing-title">
-                    Testing different smoothing parameters in DisPerSE
+                    Effect of smoothing
                 </h2>
+                <p class="justificar smoothing-text">
+                    We tested three smoothing scales (5, 7, and 10 Mpc) and found that higher smoothing 
+                    produces fewer, longer filaments, highlighting the main “super-filament” backbone 
+                    while removing small-scale structure. For the rest of the analysis, we adopt the 
+                    intermediate value (7 Mpc) as a balance between detail and large-scale coherence.
+                </p>
             </div>
 
             <div class="col-12 col-md-8">
@@ -111,6 +117,56 @@
             </div>
         </div>
     </div>
+
+    <div class="container my-4">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center">
+                <h2 class="filament-title">
+                    Large-scale structure
+                </h2>
+                <p class="justificar filament-text">
+                    This figure shows the filamentary network for the sample 
+                    (M<sub>i</sub> &le; -23) (G &lt; 20.5), where the characteristic pattern 
+                    of the cosmic web becomes evident: a coherent mesh of interconnected 
+                    filaments tracing the main axes of overdensity in the volume.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-8 d-flex justify-content-center">
+                <div class="filament-box">
+                    <img src="img/graphics/filament.png"
+                        alt="Filamentary large-scale structure"
+                        class="img-fluid filament-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row align-items-center filament-row">
+            <div class="col-12 col-md-4 text-center">
+                <h2 class="occ-title">
+                    Filament occupation
+                </h2>
+                <p class="justificar occ-text">
+                    The occupation of a filament is defined as the number of quasars
+                    associated with it, where each quasar is assigned to the filament
+                    for which the distance between the quasar and the filament's axis
+                    is the smallest.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-8 d-flex justify-content-center">
+                <div class="occ-box">
+                    <img src="img/graphics/occ.png"
+                        alt="Occupation of filaments"
+                        class="img-fluid occ-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 

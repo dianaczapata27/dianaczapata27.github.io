@@ -1829,30 +1829,114 @@ body.murals-page .ana-dos-fotos .ana-img {
     max-width: 500px;
 }
 
-.disperse-intro {
-    margin-top: 1.8rem;   
+.disperse-subtitle {
+    margin-top: 0.5rem;
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;       
+    font-weight: 300;        
+    font-style: italic;       
+    text-align: center;      
+    line-height: 1.6;
+    letter-spacing: 0.03em;  
+    max-width: 1000px;   
+    margin-left: auto;  
+    margin-right: auto; 
 }
 
 .smoothing-title {
-    font-size: 2rem;         /* puedes subir/bajar el tamaño */
+    font-size: 2rem;      
     font-weight: 600;
-    margin-bottom: 0;        /* para que no quede muy separado */
+    margin-bottom: 0;        
 }
 
-/* Caja blanca con borde sombreado */
+
 .smoothing-box {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);  /* sombra */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
     display: inline-block;
 }
 
-/* Imagen dentro de la caja */
+
 .smoothing-img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
+
+.smoothing-text {
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.smoothing-row .col-md-8 {
+    padding-left: 3.5rem;  
+}
+
+
+.filament-title {
+    font-size: 2rem;     
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.filament-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+}
+
+.filament-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    max-height: 500px;
+}
+
+.filament-text {
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.filament-row .col-md-8 {
+    padding-left: 3.5rem;  
+}
+
+.occ-title {
+    font-size: 2rem;      
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.occ-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    margin: 0 auto;        
+}
+
+.occ-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.occ-text {
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
